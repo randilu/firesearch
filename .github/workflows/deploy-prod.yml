@@ -29,9 +29,8 @@ jobs:
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FIRESEARCH_D75F0 }}
         run: |
-          pnpm add firebase-tools
-          firebase use ${{ secrets.FIREBASE_PROJECT }}
-          pnpm createfirebaseconf
+          chmod +x $GITHUB_WORKSPACE/.github/scripts/install_dependencies.sh
+          bash $GITHUB_WORKSPACE/.github/scripts/install_dependencies.sh
 
       - name: Build Firesearch Web App
         run: pnpm install && pnpm build
