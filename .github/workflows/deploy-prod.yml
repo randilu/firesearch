@@ -27,7 +27,7 @@ jobs:
 
       - name: Install dependencies
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FIRESEARCH_D75F0 }}
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run: |
           chmod +x $GITHUB_WORKSPACE/.github/scripts/install_dependencies.sh
           bash $GITHUB_WORKSPACE/.github/scripts/install_dependencies.sh
