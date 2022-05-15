@@ -1,0 +1,39 @@
+name: Deploy to Production
+
+defaults:
+  run:
+    shell: bash
+    working-directory: src
+
+on:
+  push:
+    - master
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install pnpm
+        run: npm install pnpm@7 -g
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18.0.0"
+          cache: "pnpm"
+          cache-dependency-path: carv-web-app/pnpm-lock.yaml
+
+      - name: Install dependencies
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FIRESEARCH_D75F0 }}
+        run: |
+          pnpm add firebase-tools
+          firebase use ${{ secrets.FIREBASE_PROJECT }}
+          pnpm createfirebaseconf
+
+      - name: Build Firesearch Web App
+        run: pnpm install && pnpm build
+
+      - name: Deploy to Production
+        run: pnpm firebase deploy -- --only hosting
