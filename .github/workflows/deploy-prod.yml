@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: "18.0.0"
           cache: "pnpm"
-          cache-dependency-path: carv-web-app/pnpm-lock.yaml
+          cache-dependency-path: pnpm-lock.yaml
 
       - name: Install dependencies
         env:
