@@ -36,4 +36,4 @@ jobs:
         run: pnpm install && pnpm build
 
       - name: Deploy to Production
-        run: pnpm firebase deploy -- --only hosting
+        run: firebase deploy --only hosting
