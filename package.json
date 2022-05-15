@@ -15,6 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "TZ=CET pnpm test -- --watchAll=false",
     "eject": "react-scripts eject",
     "createfirebaseconf": "firebase apps:sdkconfig web --json > ./src/firebase-config.json"
   },
