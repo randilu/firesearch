@@ -31,7 +31,7 @@ jobs:
 
       - name: Install dependencies
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN_PROD }}
         run: |
           firebase use ${{ secrets.FIREBASE_PROJECT_PROD }}
           chmod +x $GITHUB_WORKSPACE/.github/scripts/install_dependencies.sh
