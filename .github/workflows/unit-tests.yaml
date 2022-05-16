@@ -6,6 +6,7 @@ defaults:
     working-directory: src
 
 on:
+  workflow_dispatch:
   workflow_call:
   pull_request:
   push:
