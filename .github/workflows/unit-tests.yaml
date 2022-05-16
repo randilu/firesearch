@@ -30,6 +30,7 @@ jobs:
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run: |
+          firebase use ${{ secrets.FIREBASE_PROJECT }}
           chmod +x $GITHUB_WORKSPACE/.github/scripts/install_dependencies.sh
           bash $GITHUB_WORKSPACE/.github/scripts/install_dependencies.sh
 

@@ -33,6 +33,7 @@ jobs:
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run: |
+          firebase use ${{ secrets.FIREBASE_PROJECT_PROD }}
           chmod +x $GITHUB_WORKSPACE/.github/scripts/install_dependencies.sh
           bash $GITHUB_WORKSPACE/.github/scripts/install_dependencies.sh
 
@@ -43,6 +44,6 @@ jobs:
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_FIRESEARCH_D75F0 }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_OREOS_CAKE }}"
           channelId: live
           projectId: firesearch-d75f0
