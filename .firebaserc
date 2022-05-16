@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "firesearch-d75f0"
-  }
+    "default": "firesearch-d75f0",
+    "prod": "oreos-cake"
+  },
+  "targets": {}
 }
