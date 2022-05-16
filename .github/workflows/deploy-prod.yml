@@ -46,4 +46,4 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_OREOS_CAKE }}"
           channelId: live
-          projectId: firesearch-d75f0
+          projectId: oreos-cake
