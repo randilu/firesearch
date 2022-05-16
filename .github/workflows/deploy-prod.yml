@@ -8,7 +8,7 @@ defaults:
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["Unit-tests (Jest) + Coverage"]
+    workflows: ["Unit tests and Coverage"]
     branches: [master]
     types:
       - completed

@@ -1,4 +1,4 @@
-name: Unit-tests (Jest) + Coverage
+name: Unit tests and Coverage
 
 defaults:
   run:
