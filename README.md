@@ -1,3 +1,11 @@
+# Build Status
+
+[![Deploy to Production](https://github.com/randilu/firesearch/actions/workflows/deploy-prod.yml/badge.svg)](https://github.com/randilu/firesearch/actions/workflows/deploy-prod.yml)
+
+[![Deploy to Staging](https://github.com/randilu/firesearch/actions/workflows/deploy-stag.yml/badge.svg)](https://github.com/randilu/firesearch/actions/workflows/deploy-stag.yml)
+
+[![Unit tests and Coverage](https://github.com/randilu/firesearch/actions/workflows/unit-tests.yaml/badge.svg)](https://github.com/randilu/firesearch/actions/workflows/unit-tests.yaml)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
