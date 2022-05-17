@@ -45,5 +45,5 @@ jobs:
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FIRESEARCH_D75F0 }}'
-          channelId: staging
+          channelId: live
           projectId: firesearch-d75f0
