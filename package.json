@@ -21,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test:coverage": "TZ=CET pnpm test -- --watchAll=false",
+    "eject": "react-scripts eject",
+    "createfirebaseconf": "firebase apps:sdkconfig web --json > ./src/configs/firebase-config.json"
   },
   "eslintConfig": {
     "extends": [
