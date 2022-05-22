@@ -3,7 +3,7 @@ import { Layout } from "../../components/Layout";
 
 import "./styles.scss";
 
-const Home: FC = (props) => {
+export const Home: FC = (props) => {
   return (
     <Layout>
       <div className="home-page">
@@ -12,5 +12,3 @@ const Home: FC = (props) => {
     </Layout>
   );
 };
-
-export default Home;
