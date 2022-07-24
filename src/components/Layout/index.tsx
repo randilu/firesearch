@@ -12,7 +12,7 @@ export const Layout: FC<LayoutProps> = ({ children }) => (
       <div>Firesearch</div>
     </header> */}
     <div className="brand">
-      <h2>Firesearch 🔥</h2>
+      <h2>Welcome to Firesearch 🔥</h2>
     </div>
     {children}
   </div>
