@@ -1,12 +1,8 @@
-import {
-  getAuth,
-} from "firebase/auth";
+import { getAuth } from "firebase/auth";
 import { FC, useState } from "react";
 import { Layout } from "../../components/Layout";
 import { signInWithUserCredentials } from "../../utils";
 import { Home } from "../Home";
-
-import "./styles.scss";
 
 const Login: FC = (props) => {
   const auth = getAuth();
@@ -17,23 +13,19 @@ const Login: FC = (props) => {
   const handleLogin = async (e: any) => {
     e.preventDefault();
     console.log({ auth, username, password });
-    const user = await signInWithUserCredentials(
-      auth,
-      username,
-      password,
-    );
-    if(user) {
+    const user = await signInWithUserCredentials(auth, username, password);
+    if (user) {
       setisLoggedIn(true);
     }
   };
 
-  if(isLoggedIn) {
-    return <Home/>
+  if (isLoggedIn) {
+    return <Home />;
   }
 
   return (
     <Layout>
-      <div className="login-wrapper">
+      <div>
         <h1>Please Log In</h1>
         <form onSubmit={handleLogin}>
           <label>
