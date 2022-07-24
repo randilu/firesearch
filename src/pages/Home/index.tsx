@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { getAuth } from "firebase/auth";
 import { FC, useState } from "react";
 import { Layout } from "../../components/Layout";
