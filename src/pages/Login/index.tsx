@@ -1,6 +1,7 @@
 import { getAuth } from "firebase/auth";
 import { FC, useState } from "react";
 import { Layout } from "../../components/Layout";
+import { SignUp } from "../../components/SignUp/SignUp";
 import { signInWithUserCredentials } from "../../utils";
 import { Home } from "../Home";
 
@@ -25,8 +26,9 @@ const Login: FC = (props) => {
 
   return (
     <Layout>
-      <div>
-        <h1>Please Log In</h1>
+      <SignUp/>
+
+        {/* <h1>Please Log In</h1>
         <form onSubmit={handleLogin}>
           <label>
             <p>Username</p>
@@ -42,8 +44,7 @@ const Login: FC = (props) => {
           <div>
             <button type="submit">Login</button>
           </div>
-        </form>
-      </div>
+        </form> */}
     </Layout>
   );
 };
