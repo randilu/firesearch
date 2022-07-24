@@ -71,7 +71,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Staging: https://firesearch-d75f0.web.app
+
+Prod: https://oreos-cake.firebaseapp.com/
 
 ### `npm run build` fails to minify
 
