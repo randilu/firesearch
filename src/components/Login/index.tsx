@@ -1,4 +1,4 @@
-import { IconButton } from "@material-tailwind/react";
+import { Input } from "@material-tailwind/react";
 
 const Login = () => {
   return (
@@ -11,16 +11,11 @@ const Login = () => {
             className="object-cover w-full h-full"
           />
         </div>
-        <IconButton>
-          <i className="fas fa-heart" />
-        </IconButton>
         <div className="basis-1/2 p-8 flex flex-col items-center border-solid border-2  border-black ">
           <h1 className="uppercase ">Login</h1>
           <form action="">
-            <label htmlFor="username">Username</label>
-            <input type="text" name="username" id="username" />
-            <label htmlFor="password">Password</label>
-            <input type="password" name="password" id="password" />
+            <Input type="text" name="username" id="username" variant="standard" label="Username"  />
+            <Input type="password" name="password" id="password" variant="standard" label="Password"/>
           </form>
         </div>
       </div>
