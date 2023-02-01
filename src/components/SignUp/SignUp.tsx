@@ -1,6 +1,6 @@
 import type { FC } from "react";
 
-import { Button, Input, IconButton } from "@material-tailwind/react";
+import { Button, Input } from "@material-tailwind/react";
 
 interface SignUpProps {}
 
@@ -12,9 +12,10 @@ export const SignUp: FC<SignUpProps> = () => (
     >
       <div className="w-5/6 my-4">
         <Input
-          icon={<i className="fa-user" />}
+          icon={ <i className="fa-solid fa-user"/>}
           variant="static"
           placeholder="First Name..."
+          color="purple"
         />
       </div>
       <div className="w-5/6 my-4">
