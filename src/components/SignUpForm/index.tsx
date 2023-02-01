@@ -2,9 +2,9 @@ import type { FC } from "react";
 
 import { Button, Input } from "@material-tailwind/react";
 
-interface SignUpProps {}
+interface SignUpFormProps {}
 
-export const SignUp: FC<SignUpProps> = () => (
+const SignUpForm: FC<SignUpFormProps> = () => (
   <div className="flex flex-col justify-center items-center">
     <div
       className="flex flex-col items-center w-1/4 rounded-lg bg-white"
@@ -32,3 +32,5 @@ export const SignUp: FC<SignUpProps> = () => (
     </div>
   </div>
 );
+
+export default SignUpForm;
