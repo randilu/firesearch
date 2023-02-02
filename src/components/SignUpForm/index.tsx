@@ -15,14 +15,13 @@ const SignUpForm: FC<SignUpFormProps> = () => (
           icon={ <i className="fa-solid fa-user"/>}
           variant="static"
           placeholder="First Name..."
-          color="purple"
         />
       </div>
       <div className="w-5/6 my-4">
-        <Input variant="static" placeholder="Email..." color="purple" />
+        <Input variant="static" placeholder="Email..." />
       </div>
       <div className="w-5/6 my-4">
-        <Input variant="static" placeholder="Password" color="purple" />
+        <Input variant="static" placeholder="Password" />
       </div>
       <div className="w-5/6 my-4">
         <Button variant="text" size="lg">
