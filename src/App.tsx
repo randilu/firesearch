@@ -18,7 +18,7 @@ export const customTheme = {
     defaultProps: {
       color: 'purple',
     }, 
-  },      
+  },         
   tooltip: {
     styles: {
       base: {

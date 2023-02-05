@@ -3,12 +3,13 @@ import { getAuth } from "firebase/auth";
 import { FC, useState } from "react";
 import { Layout } from "../../components/Layout";
 import { signOutUser } from "../../utils";
+import Login from "../Login";
 
 import "./styles.scss";
 
 export const Home: FC = (props) => {
   const auth = getAuth();
-  const [isLoggedIn, setisLoggedIn] = useState<boolean>(false);
+  const [isLoggedIn, setisLoggedIn] = useState<boolean>(true);
 
   const handleLogout = async (e: any) => {
     e.preventDefault();
@@ -16,6 +17,10 @@ export const Home: FC = (props) => {
     await signOutUser(auth);
     setisLoggedIn(false);
   };
+
+  if (!isLoggedIn) {
+    return <Login />;
+  }
 
   return (
     <Layout>
